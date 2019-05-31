@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 withAnt() {
-                        buildAll
+                        "ant main"
                 }
             }
         }
