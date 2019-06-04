@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 withAnt(installation: 'Ant') {
-                        "ant main"
+                        bat "ant build"
                 }
             }
         }
